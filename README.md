@@ -40,8 +40,29 @@ Mirá `llenarLista.py`, asegurate de entenderlo y *sin correrlo* intentá imagin
 
 ## Extras
 
+### Jugadores y dados
+
 Supongamos que cuatro jugadores tienen que arrojar un dado una sola vez, no importa en qué orden, pero solo uno a la vez puede arrojar el dado.
 
 - Si implementás esto de forma clásica secuencial, ¿más o menos cómo sería?
 - Ahora la versión con threads, ¿aprox. cómo harías?
     - ¿Qué problemas surgen? Pensá soluciones e ideas para resolverlos
+
+### ¿Secuencial clásico, concurrente o paralelo?
+
+Para cada una de las siguiente situaciones, decidí si es secuencial clásico, concurrente o paralelo. Intentá justificar señalando las ideas esenciales de cada caso.
+
+- Cuál persona de un total de 50 corre más rápido una maratón.
+    - opción 1) Cada persona corre secuencialmente en la pista, y medimos cada tiempo.
+    - opción 2) Todas las personas corren en la misma pista, y la que llega primero listo.
+		- Preguntas: ¿hay algún recurso compartido? ¿genera problemas?
+    - opción 3) Cada persona corre en una pista distinta, todas al mismo tiempo.
+		- Pregunta: ¿hay un aumento de recursos respecto al anterior?
+    - Pregunta: ¿pros y contras de cada opción?
+
+- Compentencia de triples en basquet: quién mete más en 10 intentos.
+    - opción 1) Cada persona secuencialmente realiza 10 intentos, y anotamos la cantidad de triples.
+    - opción 2) Todas las personas tiran los 10 intentos al mismo tiempo.
+		- Preguntas: ¿hay algún recurso compartido? ¿genera problemas?
+    - opción 3) Cada persona tira en un aro distinto, todas al mismo tiempo.
+    - Pregunta: ¿pros y contras de cada opción?
