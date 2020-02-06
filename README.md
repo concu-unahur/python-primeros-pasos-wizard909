@@ -79,7 +79,8 @@ En `dowload.py` hay un código que se baja secuencialmente imágenes de un sitio
 
 ### Cosa 2
 * Mirá `llenarLista.py`, asegurate de entenderlo.
-* *Sin correrlo* intentá imaginarte y escribí los potenciales problemas que puede tener ese código. También escribí ideas sobre cómo arreglarlos.
+* *Sin correrlo* intentá imaginarte y escribí los potenciales problemas que puede tener ese código.
+* Escribí ideas sobre cómo arreglar esos potenciales problemas.
 
 ## Extras
 
