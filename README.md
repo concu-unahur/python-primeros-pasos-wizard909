@@ -17,16 +17,33 @@ En `clasesYfunciones.py` están definidos sendos threads por una función y desd
 * Importá la función y la clase en `clasesYfunciones.py` (desde `definiciones.py` obviamente).
 
 **Ayudas**
-La sintaxis para importar es `from <archivo sin .py> import <clase o funcion>`.
+* La sintaxis para importar es `from <archivo sin .py> import <clase o funcion>`.
 
 ## Muchos threads
 
-¿Y qué pasa si quiero crear y lanzar muchos threads? Sí, eso mismo, un loop. En `muchosThreads.py` completá el código para lanzar 10 threads. Medí el tiempo que se tarda entre crearlos y lanzarlos (podés usar `tiempo.py`). Asegurate de entender por qué tarda lo que tarda, a pesar de que son muchos threads.
+¿Y qué pasa si quiero crear y lanzar muchos threads? Sí, eso mismo, un loop.
 
+### Parte 1
+En `muchosThreads.py`:
+* Completá el código para lanzar 10 threads.
+* Medí el tiempo que se tarda entre crearlos y lanzarlos usando `tiempo.py`.
+
+Asegurate de entender por qué tarda lo que tarda, a pesar de que son muchos threads.
+
+### Parte 2
 Ahora bien, creaste y lanzaste muchos threads perooo... ¿podés controlarlos? Por ejemplo ¿podés esperarlos a que terminen con el `join()`? No, porque no tenés manera de llamarlos o accederlos. ¿Cómo solucionás esto? Lo podés codear abajo de lo que acabás de hacer.
-Ahora que los podés esperar, esperalos a todos y volvé medir el tiempo. ¿Por qué tarda lo que tarda? Hacete un dibujito de la *traza*, es decir la línea de tiempo de ejecución, como para entender lo que pasa.
 
-Como extra, suponete que la función recibe un parámetro `segs` que son los segundos que duerme. Fijate cómo hacés para crear un thread y pasarle este parámetro al `target`.
+En `muchosThreads.py`:
+* Inicializá una lista vacía (antes del `for`).
+* En el `for`, luego de lanzar cada thread, agregalo a la lista.
+* Hacete otro loop para esperar a que terminen todos los threads de la lista.
+* Volvé a medir el tiempo desde que los creás hasta que terminan
+
+¿Por qué tarda lo que tarda? Hacete un dibujito de la *traza*, es decir la línea de tiempo de ejecución, como para entender lo que pasa.
+
+### Extra
+* Modificá la función `dormir()` para que reciba un parámetro `segs` (los segundos que duerme). 
+* Modificá el lanzamiento de los threads para pasarle este parámetro al `target`.
 
 ## Threads con operaciones no conmutativas
 
