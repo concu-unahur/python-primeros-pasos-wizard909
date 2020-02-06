@@ -1,4 +1,4 @@
-# Python primero pasos
+# Python primeros pasos
 
 En `saludos.py`, `contador.py` y `dormilones.py` vas a encontrar lo que mostramos la clase pasada, como para que tengas una base.
 En `saludos.py` hay cosas básicas de importar bibliotecas, y de funciones y clases.
