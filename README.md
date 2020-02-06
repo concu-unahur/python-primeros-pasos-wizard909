@@ -60,7 +60,7 @@ Para cada una de las siguiente situaciones, decidí si es secuencial clásico, c
 		- Pregunta: ¿hay un aumento de recursos respecto al anterior?
     - Pregunta: ¿pros y contras de cada opción?
 
-- Compentencia de triples en basquet: quién mete más en 10 intentos.
+- Competencia de triples en basquet: quién mete más en 10 intentos.
     - opción 1) Cada persona secuencialmente realiza 10 intentos, y anotamos la cantidad de triples.
     - opción 2) Todas las personas tiran los 10 intentos al mismo tiempo.
 		- Preguntas: ¿hay algún recurso compartido? ¿genera problemas?
