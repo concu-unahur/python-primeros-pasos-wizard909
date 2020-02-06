@@ -53,7 +53,7 @@ En `operNoConm.py`:
 * dale un valor inicial a la variable;
 * ejecutá cada función en un thread separado y anotá los resultados.
 
-¿Cúales serían los potenciales problemas de esto? Podés ir metiendo algunos `sleep` o `logger.info` como para ver cómo va cambiando el valor de la variable. También podés hacer `sleep` antes de alguna de las operaciones y ver cómo afecta esto al resultado.
+¿Cúales serían los potenciales problemas de esto? Podés ir metiendo algunos `sleep` o `logging.info` como para ver cómo va cambiando el valor de la variable. También podés hacer `sleep` antes de alguna de las operaciones y ver cómo afecta esto al resultado.
 
 **Ayudas**
 * Acordate de usar `global` para poder usar la variable global desde las funciones.
