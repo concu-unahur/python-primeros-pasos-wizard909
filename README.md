@@ -12,8 +12,12 @@ La idea esencial es más entender la lógica de lo que está pasando (con los th
 
 ## Funciones, clases y bibliotecas
 
-En `clasesYfunciones.py` están definidos sendos threads por una función y desde una clase. Hacete un archivo `definiciones.py` que contenga a las definiciones de la función y de la clase, y luego importalo en el original.
-Más que nada para practicar al menos una vez cómo importar algo que hiciste vos. La sintaxis es `from <archivo sin .py> import <clase o funcion>`.
+En `clasesYfunciones.py` están definidos sendos threads por una función y desde una clase. Más que nada para practicar al menos una vez cómo importar algo que hiciste vos:
+* Hacete un archivo `definiciones.py` que contenga a las definiciones de la función y de la clase.
+* Importá la función y la clase en `clasesYfunciones.py` (desde `definiciones.py` obviamente).
+
+**Ayudas**
+La sintaxis para importar es `from <archivo sin .py> import <clase o funcion>`.
 
 ## Muchos threads
 
