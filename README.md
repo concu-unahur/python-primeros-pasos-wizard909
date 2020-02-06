@@ -1,0 +1,39 @@
+# Python primero pasos
+
+En `saludos.py`, `contador.py` y `dormilones.py` vas a encontrar lo que mostramos la clase pasada, como para que tengas una base.
+En `saludos.py` hay cosas básicas de importar bibliotecas, y de funciones y clases.
+En `contador.py` está cómo crear threads, y cómo lanzarlos (`start()`) y esperar a que terminen (`join()`).  Ahí estuvimos jugando un poco, y observamos el tema del indeterminismo cuando imprimíamos el valor del contador.
+En `dormilones.py` vimos tres ejemplos básicos de ejecución (clásico secuencial, con threads, y con threads pero esperando que terminen) y cómo se ven afectados los tiempos de ejecución (más precisamente el valor del contador).
+
+# Python segundos pasos
+
+Ahora, para que no te aburras tanto, te toca meter mano un poco a vos. En lo que sigue te proponemos algunos ejercicios como para ir entrando en onda.
+La idea esencial es más entender la lógica de lo que está pasando (con los threads en especial) más que codear técnicamente perfecto y/o complejo.
+
+## Funciones, clases y blibliotecas
+
+En `clasesYfunciones.py` están definidos sendos threads por una función y desde una clase. Hacete un archivo `definiciones.py` que contenga a las definiciones de la función y de la clase, y luego importalo en el original.
+Más que nada para practicar al menos una vez cómo importar algo que hiciste vos. La sintaxis es `from <archivo sin .py> import <clase o funcion>`.
+
+## Muchos threads
+
+¿Y qué pasa si quiere crear y lanzar muchos threads? Sí, eso mismo, un loop. En `muchosThreads.py` completá el código para lanzar 10 threads. Medí el tiempo que se tarda entre crearlos y lanzarlos (podés usar `tiempo.py`). Asegurate de entender por qué tarda lo que tarda, a pesar de que son muchos threads.
+
+Ahora bien, creaste y lanzaste muchos thredas perooo... ¿podés controlarlos? Por ejemplo ¿podés esperarlos a que terminen con el `join()`? No, porque no tenés manera de llamarlos o accederlos. ¿Cómo solucionás esto? Lo podés codear abajo de lo que acabás de hacer.
+Ahora que los podés esperar, esperalos a todos y volvé medir el tiempo.
+
+Como extra, suponete que la función recibe un parámetros `segs` que son los segundos que duerme. Fijate cómo hacés para crear un thread y pasarle este parámetro al `target`.
+
+## Threads con operaciones no conmutativas
+
+En `operNoConm.py` definí dos funciones que operen sobre una misma variable (con `global` ¿te acordás?), pero que las operaciones no sean conmutativas (es decir importa el orden en que se hagan).
+Hacete sendos threads y lanzalos. ¿Cúales serían los potenciales problemas de esto? Podés ir jugando y metiendo algunos sleeps como para ver cómo va cambiando el valor de la variable. También podés meter un sleep antes de la operación sobre la variable (como para simular un tiempo de proceso) y ver cómo afecta esto al resultado.
+
+Suponete ahora que las operaciones fueron sumar uno y multiplicar por dos, que la variable se inicializa en uno, y que yo quiero asegurarme que el resultado final sea cuatro. Entonces necesariamente tengo que primero sumar uno y luego multiplicar por dos (porque al revés da tres sino). ¿Cómo hago para asegurarme esto?
+
+## Unas cosas más
+
+En `dowload.py` hay un código que se baja secuencialmente imágenes de un sitio. Miralo, correlo, y fijate de entenderlo.
+Ahora hacete la versión threads. ¿Mejora en algo? ¿Por qué de todos modos es mejor hacerlo con threads?
+
+Mirá `llenarLista.py`, asegurate de entenderlo y *sin correrlo* intentá imaginarte y escribí los potenciales problemas que puede tener ese código. También escribí ideas sobre cómo arreglarlos.
