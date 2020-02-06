@@ -22,7 +22,7 @@ logging.basicConfig(format='%(asctime)s.%(msecs)03d [%(threadName)s] - %(message
 # acá estoy creando un objeto nuevo
 fernando = Recepcionista('Sr./a')
 
-# acá estoy llamando a un método, notar que paso dos argumentos
+# acá estoy llamando a un método, notar que no paso dos argumentos
 # el self es mágico
 fernando.saludar('nicolás')
 fernando.saludar('uma')
