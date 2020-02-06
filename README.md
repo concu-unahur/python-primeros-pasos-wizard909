@@ -45,4 +45,3 @@ Supongamos que cuatro jugadores tienen que arrojar un dado una sola vez, no impo
 - Si implementás esto de forma clásica secuencial, ¿más o menos cómo sería?
 - Ahora la versión con threads, ¿aprox. cómo harías?
     - ¿Qué problemas surgen? Pensá soluciones e ideas para resolverlos
-- Finalmente, implementá una solución usando threads y locks.
