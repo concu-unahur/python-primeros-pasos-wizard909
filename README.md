@@ -37,3 +37,11 @@ En `dowload.py` hay un código que se baja secuencialmente imágenes de un sitio
 Ahora hacete la versión threads. ¿Mejora en algo? ¿Por qué de todos modos es mejor hacerlo con threads?
 
 Mirá `llenarLista.py`, asegurate de entenderlo y *sin correrlo* intentá imaginarte y escribí los potenciales problemas que puede tener ese código. También escribí ideas sobre cómo arreglarlos.
+
+## Extras
+
+Supongamos que cuatro jugadores tienen que arrojar un dado una sola vez, no importa en qué orden, pero solo uno a la vez puede arrojar el dado.
+    - Si implementás esto de forma clásica secuencial, ¿más o menos cómo sería?
+    - Ahora la versión con threads, ¿aprox. cómo harías?
+        - ¿Qué problemas surgen? Pensá soluciones e ideas para resolverlos
+    - Finalmente, implementá una solución usando threads y locks.
