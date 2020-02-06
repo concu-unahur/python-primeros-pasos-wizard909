@@ -26,10 +26,26 @@ Como extra, suponete que la función recibe un parámetro `segs` que son los seg
 
 ## Threads con operaciones no conmutativas
 
-En `operNoConm.py` definí dos funciones que operen sobre una misma variable (con `global` ¿te acordás?), pero que las operaciones no sean conmutativas (es decir importa el orden en que se hagan).
-Hacete sendos threads y lanzalos. ¿Cúales serían los potenciales problemas de esto? Podés ir jugando y metiendo algunos sleeps como para ver cómo va cambiando el valor de la variable. También podés meter un sleep antes de la operación sobre la variable (como para simular un tiempo de proceso) y ver cómo afecta esto al resultado.
+### Parte 1
+En `operNoConm.py`:
+* definí dos funciones: `sumarUno` y `multiplicarPorDos`, que operen sobre la misma variable;
+* dale un valor inicial a la variable;
+* ejecutá cada función en un thread separado y anotá los resultados.
 
-Suponete ahora que las operaciones fueron sumar uno y multiplicar por dos, que la variable se inicializa en uno, y que yo quiero asegurarme que el resultado final sea cuatro. Entonces necesariamente tengo que primero sumar uno y luego multiplicar por dos (porque al revés da tres sino). ¿Cómo hago para asegurarme esto?
+¿Cúales serían los potenciales problemas de esto? Podés ir metiendo algunos `sleep` o `logger.info` como para ver cómo va cambiando el valor de la variable. También podés hacer `sleep` antes de alguna de las operaciones y ver cómo afecta esto al resultado.
+
+**Ayudas**
+* Acordate de usar `global` para poder usar la variable global desde las funciones.
+* A las operaciones matemáticas en las que el orden de los operandos no importa se las llama **conmutativas**. Por ejemplo: la suma y la multiplicación son conmutativas (_"el orden de los factores no altera el producto"_) pero la división y la resta no.
+
+### Parte 2
+Usando las funciones definidas antes, escribí programas que siempre realicen estas operaciones:
+* `3 + 1 / 2`;
+* `3 / 2 + 1`
+* `(3 + 1 / 2) / 2` 
+* `(3 / 2 + 1) / 2`
+
+Obviamente, las funciones tienen que ejecutar en threads diferentes, vale crear todos los threads que sean necesarios. Quizás te convenga usar varios archivos para cada una de las cuentas, e importarte las funciones de `operNoConm.py`.
 
 ## Unas cosas más
 
