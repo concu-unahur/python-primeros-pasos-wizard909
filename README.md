@@ -70,10 +70,16 @@ Obviamente, las funciones tienen que ejecutar en threads diferentes, vale crear 
 
 ## Unas cosas más
 
-En `dowload.py` hay un código que se baja secuencialmente imágenes de un sitio. Miralo, correlo, y fijate de entenderlo.
-Ahora hacete la versión threads. ¿Mejora en algo? ¿Por qué de todos modos es mejor hacerlo con threads?
+### Cosa 1
+En `dowload.py` hay un código que se baja secuencialmente imágenes de un sitio.
+* Miralo, correlo, y fijate de entenderlo.
+* Ahora hacete la versión threads.
 
-Mirá `llenarLista.py`, asegurate de entenderlo y *sin correrlo* intentá imaginarte y escribí los potenciales problemas que puede tener ese código. También escribí ideas sobre cómo arreglarlos.
+¿Mejora en algo? ¿Por qué de todos modos es mejor hacerlo con threads?
+
+### Cosa 2
+* Mirá `llenarLista.py`, asegurate de entenderlo.
+* *Sin correrlo* intentá imaginarte y escribí los potenciales problemas que puede tener ese código. También escribí ideas sobre cómo arreglarlos.
 
 ## Extras
 
